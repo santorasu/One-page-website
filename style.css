@@ -32,6 +32,62 @@ p{
     font-weight: 300;
     letter-spacing: .05rem;
 }
+ .section-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+ .section-title span{
+    color: crimson;
+}
+/* project section  */
+#projects .projects{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+#projects .projects-header h1{
+margin-bottom: 50px;
+}
+#projects .all-projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#projects .project-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#projects .project-info{
+    padding: 30px;
+    flex-basis: 50%;
+    background-color: white;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    color: white;
+}
+
+/* last edit 01:17:40s */
+
+/* End of project section  */
+
+
 #hero{
     background-image: url(./img/hero-bg.png);
     background-size: cover;
@@ -121,24 +177,14 @@ p{
     margin: 0 auto;
     padding: 100px 0;
 }
-#services .section-title{
-    font-size: 4rem;
-    font-weight: 300;
-    color: black;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-    text-align: center;
-}
-#services .section-title span{
-    color: crimson;
-}
+
 
 #services .service-bottom{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 50px;
 }
 #services .service-item{
     flex-basis: 80%;
@@ -153,6 +199,7 @@ p{
     margin: 10px 5%;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
 #services .service-item::after{
     content: '';
@@ -175,6 +222,11 @@ p{
     color: white;
     margin-bottom: 10px;
     text-transform: uppercase;
+}
+#services .service-item p{
+    color: white;
+    text-align: left;
+
 }
 
 
