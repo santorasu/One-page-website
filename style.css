@@ -44,6 +44,25 @@ p{
  .section-title span{
     color: crimson;
 }
+
+.cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: crimson;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color,color;
+}
+.cta:hover{
+    color: white;
+    background-color: crimson;
+}
+
 /* project section  */
 #projects .projects{
     flex-direction: column;
@@ -82,8 +101,40 @@ margin-bottom: 50px;
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     color: white;
 }
-
-/* last edit 01:17:40s */
+#projects .project-info h1{
+    font-size: 4rem;
+    font-weight:500 ;
+}
+#projects .project-info h2{
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-top: 10px;
+}
+#projects .project-info p{
+    color: white;
+}
+ #projects .project-img{
+    flex-basis: 50%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+ }
+ #projects .project-img::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+ }
+ #projects .project-img img{
+    transform: .3s ease transform;
+ }
+#projects::hover .project-img img{
+transform: scale(1.1);
+}
 
 /* End of project section  */
 
@@ -151,23 +202,7 @@ margin-bottom: 50px;
     animation: text_reveal_box 1s ease;
     animation-delay: .3s;
 }
-#hero .cta{
-    display: inline-block;
-    padding: 10px 30px;
-    color: crimson;
-    background-color: transparent;
-    border: 2px solid crimson;
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-    margin-top: 30px;
-    transition: .3s ease;
-    transition-property: background-color,color;
-}
-#hero .cta:hover{
-    color: white;
-    background-color: crimson;
-}
+
 /* services section */
 
 #services .services{
@@ -228,12 +263,57 @@ margin-bottom: 50px;
     text-align: left;
 
 }
-
-
-
-
 /* services section */
+/* About Section */
 
+#about .about{
+    flex-direction: column-reverse ;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+#about .col-left{
+    width: 250px;
+    height: 360px;
+}
+#about .col-right{
+    width: 100%;
+}
+
+#about .col-right h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    margin-bottom: 10px;
+}
+#about .col-right p{
+    margin-bottom: 20px;
+}
+#about .col-right .cta{
+    color: black;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    font-size: 2rem;
+} 
+#about .col-left .about-img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border: 10px solid white;
+}
+#about .col-left .about-img::after{
+    content: '';
+    position: absolute;
+    left: -33px;
+    top: 19px;
+    height: 98%;
+    width: 98%;
+    border: 7px solid crimson;
+    z-index: -1;
+}
+ /* time 01:38:04 is done */
+/* End of About Section */
 
 /* Keyframes */
 @keyframes text_reveal_box{
